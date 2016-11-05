@@ -1,0 +1,12 @@
+name: http_request_proxy
+description: Proxy HTTP requests to other server (typically from Dart backend to pub serve during development).
+version: 0.0.1
+author: Istvan Soos <istvan.soos@agilord.com>
+
+homepage: https://www.agilord.com/en/open-source/
+
+# TODO: write an article about using the proxy
+documentation: https://github.com/agilord/http_request_proxy
+
+environment:
+  sdk: '>=1.0.0 <2.0.0'
