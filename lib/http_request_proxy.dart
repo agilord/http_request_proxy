@@ -22,11 +22,11 @@ class HttpRequestProxy {
 
   /// Proxy the HTTP request to the specified server.
   Future proxyHttpRequest(HttpRequest request) async {
-    HttpClientRequest rq =
-    await _client.open(request.method, host, port, request.uri.path);
+    final HttpClientRequest rq =
+        await _client.open(request.method, host, port, request.uri.path);
     await rq.addStream(request);
-    HttpClientResponse rs = await rq.close();
-    HttpResponse r = request.response;
+    final HttpClientResponse rs = await rq.close();
+    final HttpResponse r = request.response;
     r.statusCode = rs.statusCode;
     r.headers.contentType = rs.headers.contentType;
     await r.addStream(rs);

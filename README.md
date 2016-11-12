@@ -23,6 +23,10 @@ A simple usage example:
       });
     }
 
-## Sources
+## Links
 
-Source code can be found on [GitHub](https://github.com/agilord/http_request_proxy).
+- [source code][source]
+- contributors: [Agilord][agilord]
+
+[source]: https://github.com/agilord/http_request_proxy
+[agilord]: https://www.agilord.com/
